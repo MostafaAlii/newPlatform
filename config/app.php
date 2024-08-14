@@ -196,7 +196,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\HelperServiceProvider::class,
         App\Providers\ObservableServiceProvider::class,
-
+        App\Providers\RepositoryServiceProvider::class,
+        App\Providers\SidebarServiceProvider::class,
     ],
 
     /*
