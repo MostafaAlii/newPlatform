@@ -4,11 +4,11 @@
     </div>
 </div>
 <div class="menu-item">
-    <a class="menu-link active" href="../../demo13/dist/index.html">
+    <a class="menu-link active" href="{{route('admin.admins.index')}}">
         <span class="menu-icon">
             <i class="bi bi-grid fs-3"></i>
         </span>
-        <span class="menu-title">Default</span>
+        <span class="menu-title">Admins</span>
     </a>
 </div>
 <div class="menu-item">

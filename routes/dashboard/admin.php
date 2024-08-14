@@ -20,6 +20,7 @@ Route::group(
     ], function(){
         Route::group(['middleware' => 'auth:admin', 'prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::get('dashboard', Dashboard\DashboardController::class)->name('dashboard');
+            Route::resource('admins', Dashboard\AdminController::class);
         });
         require __DIR__.'../../auth.php';
 });
