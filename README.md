@@ -33,4 +33,13 @@ To use the repository pattern in this project, follow these steps:
    Use the following command to generate a new repository:
 
    ```bash
-   php artisan make:repository (interfaceName)
+   php artisan make:repository (repositoryName)
+
+
+    Replace (repositoryName) with the name of your repository. For example, AdminRepository.
+
+    Verify the Created Files:
+        Ensure that the interface you created is located in the App\Repositories\Contracts directory. For example, AdminRepositoryInterface.
+        Ensure that the repository implementation you created is located in the App\Repositories\Eloquents directory. For example, AdminRepository.
+
+Make sure to define the methods in your interface and implement them in your repository to follow the repository pattern effectively
