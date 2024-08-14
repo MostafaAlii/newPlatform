@@ -167,6 +167,14 @@
                     </a>
                 </form>
             @endif
+            @if(academic_guard()->check())
+                <form method="POST" action="{{ route('academic.logout') }}">
+                    @csrf
+                    <a href="{{ route('academic.logout') }}" onclick="event.preventDefault(); this.closest('form').submit();" class="px-5 menu-link">
+                        Sign Out
+                    </a>
+                </form>
+            @endif
         </div>
         <!--end::Menu item-->
         <!--begin::Menu separator-->

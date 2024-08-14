@@ -3,6 +3,7 @@ return [
     'auth_page_title'                     =>                  'تسجيل الدخــول',
     'admin_auth_form_title'               =>                  'تسجيل الدخول كـمدير',
     'teacher_auth_form_title'             =>                  'تسجيل دخول كـمحاضر',
+    'academic_auth_form_title'            =>                  'تسجيل دخول اكاديمى',
     'user_auth_form_title'                =>                  'تسجيل الدخول',
     'email_address'                       =>                  'البريد الالكترونى',
     'password'                            =>                  'كلمة المرور',
@@ -22,7 +23,7 @@ return [
     'enable_two_factor_authentication'    =>                  'تفعيل المصادقة الثنائية',
     'disabled_two_factor_authentication'  =>                  'تعطيل المصادقة الثنائية',
     'two_factor_authentication'           =>                  'المصادقة الثنائية',
-    'two_factor_authentication_password_confirm'=>            'برجاء ادخال كلمة المرور لتأكيد المصادقة الثنائية',
+    'two_factor_authentication_password_confirm' =>            'برجاء ادخال كلمة المرور لتأكيد المصادقة الثنائية',
     // Login Page Authenticate Alert Messages ::
     'success_login_msg'                   =>                  'تم تسجيل الدخول بنجاح',
     'not_active_account_msg'              =>                  'الحساب غير مفعل',
