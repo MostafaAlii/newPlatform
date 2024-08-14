@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Auth\{Admin, Teacher};
+use App\Http\Controllers\Auth\{Admin, Teacher, Academic};
 use Illuminate\Support\Facades\Route;
 Route::middleware('guest')->group(function () {
     Route::prefix('admin')->group(function () {
@@ -20,6 +20,15 @@ Route::middleware('guest')->group(function () {
         Route::get('reset/password/{token}', [Teacher\TeacherAuthenticatedSessionController::class, 'reset_password'])->name('teacher.reset.password');
         Route::post('reset/password/{token}', [Teacher\TeacherAuthenticatedSessionController::class, 'do_reset_password'])->name('admin.do.reset.password');
     });
+
+    Route::prefix('academic')->as('academic.')->group(function () {
+        Route::get('login', [Academic\AcademicAuthenticatedSessionController::class, 'create'])->name('login');
+        Route::post('login', [Academic\AcademicAuthenticatedSessionController::class, 'store'])->name('post.login');
+        Route::get('forgot/password', [Academic\AcademicAuthenticatedSessionController::class, 'forgot_password'])->name('forgot.password');
+        Route::post('forgot/password', [Academic\AcademicAuthenticatedSessionController::class, 'forgot_password_post'])->name('post.forgot.password');
+        Route::get('reset/password/{token}', [Academic\AcademicAuthenticatedSessionController::class, 'reset_password'])->name('reset.password');
+        Route::post('reset/password/{token}', [Academic\AcademicAuthenticatedSessionController::class, 'do_reset_password'])->name('do.reset.password');
+    });
 });
 
 Route::middleware('auth:admin')->group(function () {
@@ -31,6 +40,12 @@ Route::middleware('auth:admin')->group(function () {
 Route::middleware('auth:teacher')->group(function () {
     Route::prefix('teacher')->group(function () {
         Route::post('logout', [Teacher\TeacherAuthenticatedSessionController::class, 'destroy'])->name('teacher.logout');
+    });
+});
+
+Route::middleware('auth:academic')->group(function () {
+    Route::prefix('academic')->as('academic.')->group(function () {
+        Route::post('logout', [Academic\AcademicAuthenticatedSessionController::class, 'destroy'])->name('logout');
     });
 });
 

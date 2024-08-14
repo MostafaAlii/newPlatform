@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Route;
 if(!function_exists('admin_guard')){
     function admin_guard() {
         return auth('admin');
@@ -29,12 +30,15 @@ if(!function_exists('get_user_data')) {
     }
 }
 
-if (!function_exists('require_dashboard_routes')) {
-    function require_dashboard_routes()
+if (!function_exists('loadDashboardRoutes')) {
+    function loadDashboardRoutes()
     {
-        $files = glob(base_path('routes/routes_group/*.php'));
+        $dashboardPath = base_path('routes/dashboard');
+        $files = glob($dashboardPath . '/*.php');
+
         foreach ($files as $file) {
-            require_once $file;
+            Route::middleware('web')->group($file);
         }
     }
 }
+
