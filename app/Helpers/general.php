@@ -18,6 +18,18 @@ if(!function_exists('academic_guard')){
     }
 }
 
+if(!function_exists('check_guard')) {
+    function check_guard() {
+        $guards = ['admin', 'teacher', 'academic'];
+        foreach($guards as $guard){
+            if(auth($guard)->check()){
+                return auth($guard);
+            }
+        }
+        return null;
+    }
+}
+
 if(!function_exists('get_user_data')) {
     function get_user_data() {
         $guards = ['admin', 'teacher', 'academic'];
