@@ -28,18 +28,16 @@ License: For each use you must have a valid license purchased only from above li
     <meta charset="utf-8" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title"
-        content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
+    <meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
     <link rel="shortcut icon" href="{{asset('dashboard/assets/media/logos/favicon.ico')}}" />
     <!--begin::Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
     <!--end::Fonts-->
     <!--begin::Page Vendor Stylesheets(used by this page)-->
     <link href="{{asset('dashboard/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset("dashboard/assets/css/jquery.dataTables.min.css") }}" rel="stylesheet" type="text/css" />
     @if(app()->getLocale()=='ar')
         <link href="{{asset('dashboard/assets/plugins/custom/prismjs/prismjs.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('dashboard/assets/plugins/global/plugins.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
@@ -51,6 +49,12 @@ License: For each use you must have a valid license purchased only from above li
         <link href="{{asset('dashboard/assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
         <!--end::Global Stylesheets Bundle-->
     @endif
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
+    <style>
+        html, body, a, i, p, h1, h2, h3, h4, h5, h6, table, .btn, .alert, .dt-button {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
     @stack('css')
 </head>
 <!--end::Head-->

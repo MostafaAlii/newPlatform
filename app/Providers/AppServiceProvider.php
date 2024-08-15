@@ -3,22 +3,20 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
-class AppServiceProvider extends ServiceProvider
-{
-    /**
-     * Register any application services.
-     */
-    public function register(): void
-    {
+use App\Helpers\AliasHelper;
+class AppServiceProvider extends ServiceProvider {
+    public function register(): void {
         //
     }
 
-    /**
-     * Bootstrap any application services.
-     */
-    public function boot(): void
-    {
-        //
+    public function boot(): void {
+        /*$config = $this->app['config'];
+        $modelAliases = AliasHelper::generateModelAliases();
+        $allAliases = array_merge(
+            $config->get('app.aliases', []),
+            $modelAliases
+        );
+        dd($allAliases);
+        $config->set('app.aliases', $allAliases);*/
     }
 }
