@@ -4,6 +4,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 class DashboardController extends Controller {
     public function __invoke() {
-        return view('frontend.home', ['PageTitle' => trans('dashboard/header.main_dashboard')]);
+        return view('frontend.home', ['PageTitle' => trans('site/site.home_page_title')]);
     }
 }
