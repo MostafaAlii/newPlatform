@@ -1,7 +1,7 @@
 @extends('frontend.includes.site')
 @push('css')
 @endpush
-@section('title', '')
+@section('pageTitle', $pageTitle)
 
 @section('content')
     <div>

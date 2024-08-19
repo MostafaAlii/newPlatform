@@ -27,3 +27,10 @@
         mirror: false, // Whether elements should animate out while scrolling past them
     });
 </script>
+<!-- JS scripts -->
+<!--end::JS-->
+@stack('js')
+</body>
+<!--end::Body-->
+
+</html>
