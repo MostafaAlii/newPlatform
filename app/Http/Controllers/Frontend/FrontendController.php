@@ -1,8 +1,8 @@
 <?php
-namespace App\Http\Controllers\Dashboard;
+namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-class DashboardController extends Controller {
+class FrontendController extends Controller {
     public function __invoke() {
         return view('frontend.home', ['PageTitle' => trans('site/site.home_page_title')]);
     }
