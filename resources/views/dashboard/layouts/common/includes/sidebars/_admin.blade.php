@@ -1,5 +1,5 @@
 <div class="menu-item">
-    <div class="menu-content pb-2">
+    <div class="pb-2 menu-content">
         <span class="menu-section text-muted text-uppercase fs-8 ls-1">{{check_guard()->name}} Dashboard</span>
     </div>
 </div>
@@ -8,7 +8,7 @@
         <span class="menu-icon">
             <i class="bi bi-grid fs-3"></i>
         </span>
-        <span class="menu-title">Admins</span>
+        <span class="menu-title">{{ trans('dashboard/admin.admins') }}</span>
     </a>
 </div>
 <div class="menu-item">
@@ -28,7 +28,7 @@
     </a>
 </div>
 <div class="menu-item">
-    <div class="menu-content pt-8 pb-2">
+    <div class="pt-8 pb-2 menu-content">
         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Crafted</span>
     </div>
 </div>
@@ -985,7 +985,7 @@
     </div>
 </div>
 <div class="menu-item">
-    <div class="menu-content pt-8 pb-2">
+    <div class="pt-8 pb-2 menu-content">
         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Apps</span>
     </div>
 </div>
@@ -1113,7 +1113,7 @@
         </div>
     </div>
 </div>
-<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+<div data-kt-menu-trigger="click" class="mb-1 menu-item menu-accordion">
     <span class="menu-link">
         <span class="menu-icon">
             <i class="bi bi-people fs-3"></i>
@@ -1122,7 +1122,7 @@
         <span class="menu-arrow"></span>
     </span>
     <div class="menu-sub menu-sub-accordion">
-        <div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+        <div data-kt-menu-trigger="click" class="mb-1 menu-item menu-accordion">
             <span class="menu-link">
                 <span class="menu-bullet">
                     <span class="bullet bullet-dot"></span>
@@ -1186,7 +1186,7 @@
         </div>
     </div>
 </div>
-<div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+<div data-kt-menu-trigger="click" class="mb-1 menu-item menu-accordion">
     <span class="menu-link">
         <span class="menu-icon">
             <i class="bi bi-people fs-3"></i>
@@ -1203,7 +1203,7 @@
                 <span class="menu-title">Overview</span>
             </a>
         </div>
-        <div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+        <div data-kt-menu-trigger="click" class="mb-1 menu-item menu-accordion">
             <span class="menu-link">
                 <span class="menu-bullet">
                     <span class="bullet bullet-dot"></span>
@@ -1230,7 +1230,7 @@
                 </div>
             </div>
         </div>
-        <div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
+        <div data-kt-menu-trigger="click" class="mb-1 menu-item menu-accordion">
             <span class="menu-link">
                 <span class="menu-bullet">
                     <span class="bullet bullet-dot"></span>
@@ -1372,7 +1372,7 @@
     </div>
 </div>
 <div class="menu-item">
-    <div class="menu-content pt-8 pb-0">
+    <div class="pt-8 pb-0 menu-content">
         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Layout</span>
     </div>
 </div>
@@ -1423,7 +1423,7 @@
 </div>
 <div class="menu-item">
     <div class="menu-content">
-        <div class="separator mx-1 my-4"></div>
+        <div class="mx-1 my-4 separator"></div>
     </div>
 </div>
 <div class="menu-item">
