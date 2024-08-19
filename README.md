@@ -43,3 +43,24 @@ To use the repository pattern in this project, follow these steps:
         Ensure that the repository implementation you created is located in the App\Repositories\Eloquents directory. For example, AdminRepository.
 
 Make sure to define the methods in your interface and implement them in your repository to follow the repository pattern effectively
+
+
+### Frontend Integration
+1. **Component Integration:**
+    * **_tpl_start.blade.php:** Includes `@yield('pageTitle')` within the `<head>` tag to dynamically set the page title.
+    * **_tpl_end.blade.php:** Includes `@stack('css')` at the end of the `<body>` tag to stack additional CSS files.
+2. **Usage Example:**
+    ```html
+    @extends('frontend.includes.site')
+    @push('css')
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    @endpush
+    @section('title', 'Home Page')
+
+    @section('content')
+
+
+    @push('js')
+
+    @endpush
+    @endsection
