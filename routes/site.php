@@ -22,6 +22,7 @@ Route::group(
     ], function(){
         Route::group(['as' => 'site.'], function () {
             Route::get('/', Frontend\FrontendController::class)->name('home');
+            
         });
         require __DIR__.'/auth.php';
 });
