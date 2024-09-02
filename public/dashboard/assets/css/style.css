@@ -407,14 +407,14 @@ body {
 }
 
 .AcademyInfoImg {
-    background-image: url(/dashboard/assets/img/Garduation.jpeg);
+    background-image: url(/img/Garduation.jpeg);
     background-size: cover;
     border-radius: 15px;
     height: 500px;
 }
 
 .BannerAcademyinfo {
-    background-image: url(/dashboard/assets/img/large-modern-office-building.jpg);
+    background-image: url(/img/large-modern-office-building.jpg);
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
@@ -570,7 +570,7 @@ body {
 }
 
 .footer {
-    background-image: url(/dashboard/assets/img/University.jpeg);
+    background-image: url(/img/University.jpeg);
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
@@ -586,7 +586,8 @@ body {
 }
 
 .footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(231, 231, 231);
 }
 
 .footer .social-links a {
@@ -615,10 +616,10 @@ body {
     z-index: 1000;
 }
 
-/*Home Styling*/
+/*!Home Styling*/
 
 .Home-Banner {
-    background-image: url(/dashboard/assets/img/HomeBanner.jpeg);
+    background-image: url(/img/HomeBanner.jpeg);
     background-size: cover;
 }
 
@@ -761,7 +762,7 @@ body {
 /*? Courses page Styling*/
 
 .SubHeader {
-    background-image: url(/dashboard/assets/img/Subheader.jpeg);
+    background-image: url(/img/Subheader.jpeg);
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1026,7 +1027,7 @@ body {
 
 /*? About Page styling*/
 .SubHeaderAbout {
-    background-image: url(/dashboard/assets/img/Container.png);
+    background-image: url(/img/Container.png);
 }
 
 .SubHeaderAboutImg {
@@ -1035,7 +1036,7 @@ body {
 
 .InfoCounterAbout {
     background-color: #cc1c2226;
-    background-image: url(/dashboard/assets/img/Container.png);
+    background-image: url(/img/Container.png);
     background-size: cover;
     background-position: 30px;
 }
@@ -1063,7 +1064,7 @@ body {
 }
 
 .sectionOfvideotrailer {
-    background-image: url(/dashboard/assets/img/backgroundSectionabout.jpeg);
+    background-image: url(/img/backgroundSectionabout.jpeg);
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1128,8 +1129,7 @@ body {
 }
 
 .background {
-    background: url(/dashboard/assets/img/University.jpeg) no-repeat center
-        center/cover;
+    background: url(/img/University.jpeg) no-repeat center center/cover;
     background-size: cover;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);

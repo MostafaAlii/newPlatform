@@ -27,6 +27,33 @@
         mirror: false, // Whether elements should animate out while scrolling past them
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+        const dropdownToggle = document.getElementById('dropdownMenuButton1');
+        const currentUrl = window.location.href;
+        const headurl = document.getElementById('headurl');
+
+        if (currentUrl.includes('/en')) {
+            dropdownToggle.textContent = 'English';
+            
+
+        } else if (currentUrl.includes('/ar')) {
+            dropdownToggle.textContent = 'Arabic';
+        }
+       
+
+
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent the default link behavior
+                const selectedText = this.textContent;
+                dropdownToggle.textContent = selectedText;
+            });
+        });
+    });
+    
+</script>
 <!-- JS scripts -->
 <!--end::JS-->
 @stack('js')

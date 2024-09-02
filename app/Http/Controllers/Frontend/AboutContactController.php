@@ -14,6 +14,6 @@ class AboutContactController extends Controller
 
     public function Contact()
     {   
-        return view('frontend.Contact', ['pageTitle' => trans('site/site.Contact')]);
+        return view('frontend.Contact', ['pageTitle' => trans('site/site.Contact_page_title')]);
     }
 }

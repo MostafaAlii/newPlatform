@@ -51,7 +51,7 @@
             <nav class="navbar navbar-expand-lg justify-content-center text-center">
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav text-center">
+                    <ul class="navbar-nav text-center align-items-center">
                         <li class="nav-item {{ request()->routeIS('site.home') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.home') }}">Home
                             </a>
@@ -85,6 +85,26 @@
                             <a class="nav-link" href="{{ route('site.Contact') }}">
                                 Contact
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Choose language
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item " href="#" data-value="en">
+                                            <img width="20" height="20"
+                                                src="https://img.icons8.com/color/120/great-britain-circular.png"
+                                                alt="great-britain-circular" />
+                                            English</a></li>
+                                    <li><a class="dropdown-item" href="#" data-value="ar">
+                                            <img width="20" height="20"
+                                                src="https://img.icons8.com/color/120/saudi-arabia-circular.png"
+                                                alt="saudi-arabia-circular" />
+                                            Arabic</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
