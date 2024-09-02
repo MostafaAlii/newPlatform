@@ -57,7 +57,7 @@
                                 @csrf
                                 <input value="" type="text" class="search-input"
                                     placeholder="Look for Courses" name="search">
-                                <button class="search-button" type="submit">
+                                <button class="search-button mx-2" type="submit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-search text-danger" viewBox="0 0 16 16">
                                         <path

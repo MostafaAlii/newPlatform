@@ -4,11 +4,11 @@
         <div class="container d-flex justify-content-between">
             <div class="row">
                 <div class="col-md-6 d-flex align-items-center">
-                    <i class="fa fa-phone tph-icons mt-0 mr-1"></i> <span class="text-dark infos">(+88) 1990
+                    <i class="fa fa-phone tph-icons mt-0 mx-1"></i> <span class="text-dark infos">(+88) 1990
                         6886</span>
                 </div>
-                <div class="col-md-6 d-flex align-items-center border-left border-dark b-1">
-                    <img width="16" height="16" class="mt-0 mr-1"
+                <div class="col-md-6 d-flex align-items-center infoContainer">
+                    <img width="16" height="16" class="mt-0 mx-1"
                         src="https://img.icons8.com/material-sharp/128/DB0000/mail.png" alt="mail" />
                     <span class="text-dark infos">agency@example.com</span>
                 </div>
@@ -21,7 +21,7 @@
                         <div class="container d-flex">
                             <a href="" class="text-dark text-center cardentials mr-2">Log in</a>
                             <a href=""
-                                class="text-dark cardentials border-left border-dark border-1 pl-2">Register</a>
+                                class="text-dark cardentials infoContainer px-2 mx-2">Register</a>
                         </div>
 
                 </div>
@@ -30,10 +30,10 @@
 
 
                 <div class="container justify-content-center d-flex col-md-4">
-                    <a href="#" class="ml-3"><i class="fab fa-twitter icons"></i></a>
-                    <a href="#" class="ml-2"><i class="fab fa-facebook-f icons"></i></a>
-                    <a href="#" class="ml-2"><i class="fab fa-instagram icons"></i></a>
-                    <a href="#" class="ml-2"><i class="fab fa-linkedin-in icons"></i></a>
+                    <a href="#" class="mx-1"><i class="fab fa-twitter icons"></i></a>
+                    <a href="#" class="mx-1"><i class="fab fa-facebook-f icons"></i></a>
+                    <a href="#" class="mx-1"><i class="fab fa-instagram icons"></i></a>
+                    <a href="#" class="mx-1"><i class="fab fa-linkedin-in icons"></i></a>
 
                 </div>
 
@@ -48,15 +48,15 @@
                 <a href=""><img src="{{ asset('dashboard/assets/img/white-logo.png') }}" alt=""></a>
             </div>
 
-            <nav class="navbar navbar-expand-lg justify-content-center text-center">
+            <nav class="navbar navbar-expand-lg">
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav text-center align-items-center">
-                        <li class="nav-item {{ request()->routeIS('site.home') ? 'active' : '' }}">
+                        <li class="nav-item  {{ request()->routeIS('site.home') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.home') }}">Home
                             </a>
                         </li>
-                        <li class="nav-item {{ request()->routeIS('site.courses') ? 'active' : '' }}">
+                        <li class="nav-item {{ request()->routeIs('site.courses') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.courses') }}">
                                 Courses
 
@@ -65,23 +65,25 @@
                         <li class="nav-item dropdownmenu">
                             <a class="nav-link buttonDrop" href="#">
                                 Other
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                </svg>
                             </a>
                             <div class="dropdown-content text-center" aria-labelledby="otherDropdown">
-                                <a class="pt-2" id="top" href="ErrorPage.html">Subul+</a>
-                                <a class="py-2" id="middle" href="ErrorPage.html">Our best</a>
-                                <a class="pb-2" id="bottom" href="ErrorPage.html">Subulway</a>
+                                <a class="text-center pt-2" id="top" href="ErrorPage.html">Subul+</a>
+                                <a class="text-center py-2" id="middle" href="ErrorPage.html">Our best</a>
+                                <a class="text-center pb-2" id="bottom" href="ErrorPage.html">Subulway</a>
                             </div>
                         </li>
-                        <li class="nav-item {{ request()->routeIS('site.About') ? 'active' : '' }}">
+                        <li class="nav-item  {{ request()->routeIs('site.About') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.About') }}">
                                 About
 
                             </a>
                         </li>
-                        <li class="nav-item {{ request()->routeIS('site.Contact') ? 'active' : '' }}">
+                        <li class="nav-item  {{ request()->routeIs('site.Contact') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.Contact') }}">
                                 Contact
                             </a>
@@ -108,10 +110,14 @@
                         </li>
                     </ul>
                 </div>
+
+
+
+
             </nav>
 
 
-            <div class="d-flex ml-auto">
+            <div class="d-flex cartContainer">
 
                 <div class="cart text-right d-flex justify-content-end">
                     <a href="" id="cart-btn">
@@ -141,9 +147,10 @@
                         </button>
                     </div>
                     <ul class="list-unstyled components">
-                        <li class="MenuItem"><a href="/" class="linkItem">Home</a></li>
-                        <li class="MenuItem "><a href="courses"
-                                class="linkItem">Courses</a>
+                        <li class="MenuItem {{ request()->routeIS('site.home') ? 'active' : '' }}"><a href="{{ route('site.home') }}"
+                                class="linkItem">Home</a></li>
+                        <li class="MenuItem {{ request()->routeIs('site.courses') ? 'active' : '' }}"><a
+                                href="{{ route('site.courses') }}" class="linkItem">Courses</a>
                         </li>
                         <li class="MenuItem"><a href="#otherSubmenu" data-bs-toggle="collapse"
                                 aria-expanded="false" class="dropdown-toggle linkItem">Other</a>
@@ -153,21 +160,45 @@
                                 <li><a href="ErrorPage.html" class="linkItem">Submenu 3</a></li>
                             </ul>
                         </li>
-                        <li class="MenuItem"><a href="About" class="linkItem">About</a></li>
-                        <li class="MenuItem"><a href="Contact" class="linkItem">Contact</a></li>
+                        <li class="MenuItem {{ request()->routeIS('site.About') ? 'active' : '' }}"><a href="{{ route('site.About') }}"
+                                class="linkItem">About</a></li>
+                        <li class="MenuItem {{ request()->routeIS('site.Contact') ? 'active' : '' }}"><a
+                                href="{{ route('site.Contact') }}" class="linkItem">Contact</a></li>
+
+                                <li class="MenuItem">
+                                    <div class="dropdown">
+                                        <button class="btn btn-light dropdown-toggle" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Choose language
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item " href="#" data-value="en">
+                                                    <img width="20" height="20"
+                                                        src="https://img.icons8.com/color/120/great-britain-circular.png"
+                                                        alt="great-britain-circular" />
+                                                    English</a></li>
+                                            <li><a class="dropdown-item" href="#" data-value="ar">
+                                                    <img width="20" height="20"
+                                                        src="https://img.icons8.com/color/120/saudi-arabia-circular.png"
+                                                        alt="saudi-arabia-circular" />
+                                                    Arabic</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                     </ul>
 
                     <!-- Auth section -->
                     <div class="container justify-content-center">
-                       
-                        <div class="container d-flex">
-                            <a href="" class="text-light text-decoration-none text-center cardentials mr-2">Log in</a>
-                            <a href=""
-                                class="text-light text-decoration-none cardentials border-left border-light border-1 pl-2">Register</a>
-                        </div>
+                        
+                            <div class="container d-flex">
+                                <a href=""
+                                    class="text-light text-decoration-none text-center cardentials mr-2">Log in</a>
+                                <a href=""
+                                    class="text-light text-decoration-none cardentials border-left border-light border-1 pl-2">Register</a>
+                            </div>
 
-                </div>
-            
+                    </div>
+
                 </nav>
 
                 <button type="button" id="sidebarCollapseBtn">

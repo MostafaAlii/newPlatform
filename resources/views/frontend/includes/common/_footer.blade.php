@@ -1,4 +1,4 @@
-<footer class="footer mt-auto py-5">
+<footer class="footer mt-auto py-5 ">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -28,10 +28,10 @@
                 </ul>
             </div>
             <div class="col-md-3 text-center">
-                <img src="{{ asset('dashboard/assets/img/white-logo.png') }}" alt="Turuq Logo" class="mb-3">
+                <a href="{{ route('site.home') }}" class="text-decoration-none text-light fw-bold display-6">SUBUL</a>
                 <p class="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
-                <div class="social-links">
+                <div class="social-links justify-content-center text-center">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -51,7 +51,7 @@
                 <a href="#">Terms of service</a>
             </div>
             <div class="col-md-6 text-center">
-                <p class="text-light">&copy; 2024 Belton is Proudly Powered by <a href="#"
+                <p class="text-light copyright">&copy; 2024 Belton is Proudly Powered by <a href="#"
                         class="text-danger">Turuq</a></p>
             </div>
         </div>
