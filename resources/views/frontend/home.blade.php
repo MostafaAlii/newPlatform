@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="col-md">
-                    <img width="560px" class="homeBannerGirl" src="img/GirlHomeBanner.png" alt="">
+                    <img width="560px" class="homeBannerGirl" src="{{ asset('dashboard/assets/img/GirlHomeBanner.png') }}" alt="">
                 </div>
 
             </div>
@@ -496,20 +496,20 @@
             <div class="row g-3 justify-content-center">
                 <div class="col-sm justify-content-center text-center">
 
-                    <img src="Parteners/Image.png" alt="">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image.png') }}" alt="">
 
                 </div>
                 <div class="col-sm text-center">
-                    <img src="Parteners/Image-2.png">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-2.png') }}">
                 </div>
                 <div class="col-sm text-center">
 
-                    <img src="Parteners/Image-3.png">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-3.png') }}">
 
                 </div>
                 <div class="col-sm text-center">
 
-                    <img src="Parteners/Image-4.png">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-4.png') }}">
 
                 </div>
 
@@ -521,22 +521,22 @@
 
             <div class="row g-3">
                 <div class="col-sm text-center">
-                    <img src="Parteners/Image-5.png" alt="">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-5.png') }}" alt="">
 
                 </div>
                 <div class="col-sm text-center">
 
-                    <img src="Parteners/Image-7.png">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-6.png') }}">
 
                 </div>
                 <div class="col-sm text-center">
 
-                    <img src="Parteners/Image-5.png">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-7.png') }}">
 
                 </div>
                 <div class="col-sm text-center">
 
-                    <img src="Parteners/Image-3.png">
+                    <img src="{{ asset('dashboard/assets/Parteners/Image-1.png') }}">
 
                 </div>
 

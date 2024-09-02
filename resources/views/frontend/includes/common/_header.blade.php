@@ -19,8 +19,8 @@
 
                 <div class="justify-content-center text-center col-md-8 d-flex ">
                         <div class="container d-flex">
-                            <a href="{{ route('Check') }}" class="text-dark text-center cardentials mr-2">Log in</a>
-                            <a href="{{ route('Check') }}"
+                            <a href="" class="text-dark text-center cardentials mr-2">Log in</a>
+                            <a href=""
                                 class="text-dark cardentials border-left border-dark border-1 pl-2">Register</a>
                         </div>
 
@@ -45,19 +45,19 @@
     <div class="main-header py-3 bg-dark">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
-                <a href="{{ route('home') }}"><img src="{{ asset('img/white-logo.png') }}" alt=""></a>
+                <a href=""><img src="{{ asset('dashboard/assets/img/white-logo.png') }}" alt=""></a>
             </div>
 
             <nav class="navbar navbar-expand-lg justify-content-center text-center">
 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav text-center">
-                        <li class="nav-item  {{ request()->routeIS('home') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('home') }}">Home
+                        <li class="nav-item {{ request()->routeIS('site.home') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('site.home') }}">Home
                             </a>
                         </li>
-                        <li class="nav-item {{ request()->routeIs('courses') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('courses') }}">
+                        <li class="nav-item {{ request()->routeIS('site.courses') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('site.courses') }}">
                                 Courses
 
                             </a>
@@ -75,14 +75,14 @@
                                 <a class="pb-2" id="bottom" href="ErrorPage.html">Subulway</a>
                             </div>
                         </li>
-                        <li class="nav-item  {{ request()->routeIs('About') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('About') }}">
+                        <li class="nav-item {{ request()->routeIS('site.About') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('site.About') }}">
                                 About
 
                             </a>
                         </li>
-                        <li class="nav-item  {{ request()->routeIs('Contact') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('Contact') }}">
+                        <li class="nav-item {{ request()->routeIS('site.Contact') ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('site.Contact') }}">
                                 Contact
                             </a>
                         </li>
@@ -94,14 +94,14 @@
             <div class="d-flex ml-auto">
 
                 <div class="cart text-right d-flex justify-content-end">
-                    <a href="{{ route('cart.index') }}" id="cart-btn">
+                    <a href="" id="cart-btn">
                         <script src="https://cdn.lordicon.com/lordicon.js"></script>
                         <lord-icon src="https://cdn.lordicon.com/taymdfsf.json" trigger="hover" stroke="bold"
                             colors="primary:#ffffff,secondary:#ffffff" style="width:30px;height:30px">
                         </lord-icon></i>
 
                         
-                        <span class="badge rounded-pill badge-danger">{{ $cartcount }}</span>
+                        <span class="badge rounded-pill badge-danger"></span>
                         
                         
                         
@@ -121,8 +121,8 @@
                         </button>
                     </div>
                     <ul class="list-unstyled components">
-                        <li class="MenuItem {{ request()->routeIS('home') ? 'active' : '' }}"><a href="/" class="linkItem">Home</a></li>
-                        <li class="MenuItem {{ request()->routeIs('courses') ? 'active' : '' }}"><a href="courses"
+                        <li class="MenuItem"><a href="/" class="linkItem">Home</a></li>
+                        <li class="MenuItem "><a href="courses"
                                 class="linkItem">Courses</a>
                         </li>
                         <li class="MenuItem"><a href="#otherSubmenu" data-bs-toggle="collapse"
@@ -133,16 +133,16 @@
                                 <li><a href="ErrorPage.html" class="linkItem">Submenu 3</a></li>
                             </ul>
                         </li>
-                        <li class="MenuItem {{ request()->routeIS('About') ? 'active' : '' }}"><a href="About" class="linkItem">About</a></li>
-                        <li class="MenuItem {{ request()->routeIS('Contact') ? 'active' : '' }}"><a href="Contact" class="linkItem">Contact</a></li>
+                        <li class="MenuItem"><a href="About" class="linkItem">About</a></li>
+                        <li class="MenuItem"><a href="Contact" class="linkItem">Contact</a></li>
                     </ul>
 
                     <!-- Auth section -->
                     <div class="container justify-content-center">
                        
                         <div class="container d-flex">
-                            <a href="{{ route('Check') }}" class="text-light text-decoration-none text-center cardentials mr-2">Log in</a>
-                            <a href="{{ route('Check') }}"
+                            <a href="" class="text-light text-decoration-none text-center cardentials mr-2">Log in</a>
+                            <a href=""
                                 class="text-light text-decoration-none cardentials border-left border-light border-1 pl-2">Register</a>
                         </div>
 

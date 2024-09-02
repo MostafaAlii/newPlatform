@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="col-md-3 text-center">
-                <img src="{{ asset('img/white-logo.png') }}" alt="Turuq Logo" class="mb-3">
+                <img src="{{ asset('dashboard/assets/img/white-logo.png') }}" alt="Turuq Logo" class="mb-3">
                 <p class="text-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
                 <div class="social-links">
