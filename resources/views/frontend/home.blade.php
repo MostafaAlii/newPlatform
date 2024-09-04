@@ -9,20 +9,17 @@
             <div class="row g-3 justify-content-center align-items-center">
                 <div class="col-md p-5 g-3 justify-content-center align-items-center">
                     <div class="container">
-                        <h2> We Have The Best Courses And Trainings Here</h2>
-                        <p>You will find here the best courses and training beacuse we have the <br> best tutors enroll with
-                            us and enjoy the joyful of learning</p>
+                        <h2> @lang('content/home-content.home_banner_title')</h2>
+                        <p>@lang('content/home-content.home_banner_subtitle')</p>
                     </div>
                     <div class="container mt-4">
-                        <a href=""><button class="StartButton text-center">Let's Start</button></a> <a href="">
+                        <a href=""><button class="StartButton text-center"> @lang('content/home-content.home_banner_start_button') </button></a> <a href="">
                             <button
-                                class="WVideo text-center">Watch A Video </button></a>
+                                class="WVideo text-center" > @lang('content/home-content.home_banner_video_button') </button></a>
                     </div> <br>
                     <div class="container py-2">
-                        <button class="text-center USersBtn">170+ <br> <span class="text-danger USersTitle">Active
-                                Users</span></button>
-                        <button class="text-center USersBtn">940+ <br> <span class="text-danger USersTitle">Training
-                                Courses</span></button>
+                        <button class="text-center USersBtn">170+ <br> <span class="text-danger USersTitle">@lang('content/home-content.home_banner_users_number')</span></button>
+                        <button class="text-center USersBtn">940+ <br> <span class="text-danger USersTitle">@lang('content/home-content.home_banner_Courses_number')</span></button>
     
                     </div>
                 </div>
@@ -43,8 +40,7 @@
         <div class="container align-items-center">
             <div class="row justify-content-between g-3 d-flex align-items-center">
                 <div class="col-sm align-items-center text-center">
-                    <h3 class="text-center">All <span class="text-danger" style="font-weight: 700;">COURSES</span> from
-                        Subul Almaharat</h3>
+                    <h3 class="text-center">@lang('content/home-content.home_course_category_title')</h3>
     
                 </div>
     
@@ -52,7 +48,7 @@
                     <div class="container text-right">
                         <div class="search-container text-right d-flex">
     
-                            <input type="text" class="search-input" placeholder="Look for Courses">
+                            <input type="text" class="search-input" placeholder="@lang('content/home-content.home_course_search')">
                             <button class="search-button mx-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-search text-danger" viewBox="0 0 16 16">
@@ -440,7 +436,7 @@
         <div class="container justify-content-center">
     
             <div class="container text-center">
-                <h2 class="text-center">All our Trusted Partners</h2>
+                <h2 class="text-center">@lang('content/home-content.home_parteners_title')</h2>
     
             </div>
             <div class="row g-3 justify-content-center">

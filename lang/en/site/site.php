@@ -1,7 +1,10 @@
 <?php
 return [
-    'home_page_title'                         =>                  'Home Page',
-    'course_page_title'                         =>                  'Courses Page',
-    'About_page_title'                         =>                  'About Page',
-    'Contact_page_title'                         =>                  'Contact Page',
+    'home_page_title'                         =>                  'Home',
+    'course_page_title'                         =>                  'Courses',
+    'About_page_title'                         =>                  'About',
+    'Contact_page_title'                         =>                  'Contact',
+    'Other_page_title'                         =>                  'Other',
+    'login'                         =>                  'Log in',
+    'register'                         =>                  'Register',
 ];

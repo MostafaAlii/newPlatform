@@ -51,6 +51,8 @@
         h5,
         h6,
         table,
+        button,
+        *,
         .btn,
         .alert,
         .dt-button {

@@ -19,9 +19,9 @@
 
                 <div class="justify-content-center text-center col-md-8 d-flex ">
                         <div class="container d-flex">
-                            <a href="" class="text-dark text-center cardentials mr-2">Log in</a>
+                            <a href="" class="text-dark text-center cardentials mr-2">@lang('site/site.login')</a>
                             <a href=""
-                                class="text-dark cardentials infoContainer px-2 mx-2">Register</a>
+                                class="text-dark cardentials infoContainer px-2 mx-2">@lang('site/site.register')</a>
                         </div>
 
                 </div>
@@ -53,18 +53,18 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav text-center align-items-center">
                         <li class="nav-item  {{ request()->routeIS('site.home') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('site.home') }}">Home
+                            <a class="nav-link" href="{{ route('site.home') }}">@lang('site/site.home_page_title')
                             </a>
                         </li>
                         <li class="nav-item {{ request()->routeIs('site.courses') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.courses') }}">
-                                Courses
+                                @lang('site/site.course_page_title')
 
                             </a>
                         </li>
                         <li class="nav-item dropdownmenu">
                             <a class="nav-link buttonDrop" href="#">
-                                Other
+                                @lang('site/site.Other_page_title')
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -79,20 +79,20 @@
                         </li>
                         <li class="nav-item  {{ request()->routeIs('site.About') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.About') }}">
-                                About
+                                @lang('site/site.About_page_title')
 
                             </a>
                         </li>
                         <li class="nav-item  {{ request()->routeIs('site.Contact') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.Contact') }}">
-                                Contact
+                                @lang('site/site.Contact_page_title')
                             </a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
                                 <button class="btn btn-light dropdown-toggle" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Choose language
+                                    Arabic
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                     <li><a class="dropdown-item " href="#" data-value="en">

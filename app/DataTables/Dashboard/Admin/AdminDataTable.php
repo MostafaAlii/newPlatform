@@ -39,7 +39,7 @@ class AdminDataTable extends BaseDataTable
 
     public function query(): QueryBuilder
     {
-        return Admin::latest();
+        return Admin::query();
     }
 
     public function getColumns(): array
