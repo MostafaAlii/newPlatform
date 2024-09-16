@@ -24,6 +24,14 @@ class AdminTableSeeder extends Seeder {
             'type'          =>  'supervisor',
             'remember_token' => Str::random(10),
         ]);
+        $admin = Admin::create([
+            'name'          =>  'Tamer',
+            'email'         =>  'tamer@app.com',
+            'password'      =>  bcrypt('123123'),
+            'status'        =>  'inactive',
+            'type'          =>  'supervisor',
+            'remember_token' => Str::random(10),
+        ]);
         Schema::enableForeignKeyConstraints();
     }
 }

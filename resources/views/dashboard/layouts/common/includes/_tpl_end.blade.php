@@ -35,6 +35,8 @@
 <script src="{{ asset("dashboard/assets/js/jquery.dataTables.min.js") }}"></script>
 <script src="{{ asset("dashboard/assets/js/dataTables.buttons.min.js") }}"></script>
 <script src="{{url('vendor/datatables/buttons.server-side.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
 <!-- End DataTables -->
 <!--end::Javascript-->
 @stack('js')

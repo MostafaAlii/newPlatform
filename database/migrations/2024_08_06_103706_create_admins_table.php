@@ -21,6 +21,7 @@ return new class extends Migration
             $table->enum('status', ['active', 'inactive']);
             $table->enum('type', ['admin', 'supervisor']);
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

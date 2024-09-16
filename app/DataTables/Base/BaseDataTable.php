@@ -53,6 +53,7 @@ abstract class BaseDataTable extends DataTable {
                     'className' => 'btn btn-dark',
                     'text' => "<i class='fa fa-sync-alt'></i>" . trans('dashboard/datatable.reload')
                 ],
+                
             ],
             'language' => datatable_lang(),
         ];

@@ -35,6 +35,7 @@ License: For each use you must have a valid license purchased only from above li
     <link rel="shortcut icon" href="{{asset('dashboard/assets/media/logos/favicon.ico')}}" />
     <!--begin::Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Cairo:300,400&amp;subset=arabic,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
     <!--end::Fonts-->
     <!--begin::Page Vendor Stylesheets(used by this page)-->
     <link href="{{asset('dashboard/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet" type="text/css" />

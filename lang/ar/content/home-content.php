@@ -6,7 +6,8 @@ return [
     'home_banner_start_button'                         =>                  'شاهد الفيديو',
     'home_banner_users_number'                         =>                  "المستخدمين المتفاعلين",
     'home_banner_Courses_number'                         =>                  "الكورسات المتوفرة",
-    'home_course_category_title'                         =>                  'كل <span class="text-danger" style="font-weight: 700;">الكورسات</span> من سبل المهارات',
+    'home_course_category_title1'                         =>                  'كل',
+    'home_course_category_title2'                         =>                  '  من سبل المهارات',
     'home_course_search'                         =>                  'ابحث عن الكورسات',
     'home_parteners_title'                         =>                   'شركائنا الموثوقين',
 ];

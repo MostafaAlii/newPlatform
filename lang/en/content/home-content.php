@@ -6,7 +6,8 @@ return [
     'home_banner_start_button'                         =>             "Let's start",
     'home_banner_users_number'                         =>             "Active Users",
     'home_banner_Courses_number'                         =>           "Let's start",
-    'home_course_category_title'                         =>           'All <span class="text-danger" style="font-weight: 700;">COURSES</span> from Subul Almaharat',
+    'home_course_category_title1'                         =>           'All',
+    'home_course_category_title2'                         =>          'from Subul Almaharat',
     'home_course_search'                         =>                   'Look for courses',
     'home_parteners_title'                         =>                   'All our Trusted Partners',
 ];

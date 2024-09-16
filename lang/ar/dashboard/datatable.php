@@ -25,6 +25,8 @@ return [
 	'ex_excel_import'			   =>                       'استيراد من Excel',
 	'ex_csv'                       =>                       'تصدير ك CSV',
 	'reload'                       =>                       'إعادة تحميل',
+	'admins'                       =>                       'المشرفين',
+	'deleted'                       =>                       'المحذوفات',
 	'reset'                        =>                       'إعادة تعيين',
 	'print'                        =>                       'طباعة',
 	'no_date_found'		           =>                       'لم يتم تعيين تاريخ',

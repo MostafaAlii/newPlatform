@@ -4,11 +4,19 @@
     </div>
 </div>
 <div class="menu-item">
-    <a class="menu-link active" href="{{route('admin.admins.index')}}">
+    <a class="menu-link {{ request()->routeIS('admin.admins.index') ? 'active' : '' }}" href="{{route('admin.admins.index')}}">
         <span class="menu-icon">
             <i class="bi bi-grid fs-3"></i>
         </span>
         <span class="menu-title">{{ trans('dashboard/admin.admins') }}</span>
+    </a>
+</div>
+<div class="menu-item">
+    <a class="menu-link {{ request()->routeIS('admin.categories.index') ? 'active' : '' }}" href="{{route('admin.categories.index')}}">
+        <span class="menu-icon">
+            <i class="bi bi-grid fs-3"></i>
+        </span>
+        <span class="menu-title">{{ trans('dashboard/admin.categories') }}</span>
     </a>
 </div>
 <div class="menu-item">

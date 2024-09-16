@@ -19,9 +19,9 @@
 
                 <div class="justify-content-center text-center col-md-8 d-flex ">
                         <div class="container d-flex">
-                            <a href="" class="text-dark text-center cardentials mr-2">@lang('site/site.login')</a>
+                            <a href="" class="text-dark text-center cardentials mr-2">{{ __('site/site.login') }}</a>
                             <a href=""
-                                class="text-dark cardentials infoContainer px-2 mx-2">@lang('site/site.register')</a>
+                                class="text-dark cardentials infoContainer px-2 mx-2">{{ __('site/site.register')}}</a>
                         </div>
 
                 </div>
@@ -53,18 +53,18 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav text-center align-items-center">
                         <li class="nav-item  {{ request()->routeIS('site.home') ? 'active' : '' }}">
-                            <a class="nav-link" href="{{ route('site.home') }}">@lang('site/site.home_page_title')
+                            <a class="nav-link" href="{{ route('site.home') }}">{{ __('site/site.home_page_title')}}
                             </a>
                         </li>
                         <li class="nav-item {{ request()->routeIs('site.courses') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.courses') }}">
-                                @lang('site/site.course_page_title')
+                                {{ __('site/site.course_page_title')}}
 
                             </a>
                         </li>
                         <li class="nav-item dropdownmenu">
                             <a class="nav-link buttonDrop" href="#">
-                                @lang('site/site.Other_page_title')
+                                {{ __('site/site.Other_page_title')}}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -79,13 +79,13 @@
                         </li>
                         <li class="nav-item  {{ request()->routeIs('site.About') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.About') }}">
-                                @lang('site/site.About_page_title')
+                                {{ __('site/site.About_page_title')}}
 
                             </a>
                         </li>
                         <li class="nav-item  {{ request()->routeIs('site.Contact') ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('site.Contact') }}">
-                                @lang('site/site.Contact_page_title')
+                                {{ __('site/site.Contact_page_title')}}
                             </a>
                         </li>
                         <li class="nav-item">
@@ -148,9 +148,9 @@
                     </div>
                     <ul class="list-unstyled components">
                         <li class="MenuItem {{ request()->routeIS('site.home') ? 'active' : '' }}"><a href="{{ route('site.home') }}"
-                                class="linkItem">Home</a></li>
+                                class="linkItem">{{ __('site/site.home_page_title')}}</a></li>
                         <li class="MenuItem {{ request()->routeIs('site.courses') ? 'active' : '' }}"><a
-                                href="{{ route('site.courses') }}" class="linkItem">Courses</a>
+                                href="{{ route('site.courses') }}" class="linkItem">{{ __('site/site.courses_page_title')}}</a>
                         </li>
                         <li class="MenuItem"><a href="#otherSubmenu" data-bs-toggle="collapse"
                                 aria-expanded="false" class="dropdown-toggle linkItem">Other</a>
@@ -161,9 +161,9 @@
                             </ul>
                         </li>
                         <li class="MenuItem {{ request()->routeIS('site.About') ? 'active' : '' }}"><a href="{{ route('site.About') }}"
-                                class="linkItem">About</a></li>
+                                class="linkItem">{{ __('site/site.About_page_title')}}</a></li>
                         <li class="MenuItem {{ request()->routeIS('site.Contact') ? 'active' : '' }}"><a
-                                href="{{ route('site.Contact') }}" class="linkItem">Contact</a></li>
+                                href="{{ route('site.Contact') }}" class="linkItem">{{ __('site/site.Contact_page_title')}}</a></li>
 
                                 <li class="MenuItem">
                                     <div class="dropdown">

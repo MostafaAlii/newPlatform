@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder {
             AdminTableSeeder::class,
             TeacherTableSeeder::class,
             AcademicTableSeeder::class,
+            CategorySeeder::class,
         ]);
     }
 }
